@@ -1,0 +1,398 @@
+@import url('https://use.typekit.net/ubr8ejf.css');
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-family: var(--text-font);
+  font-size: 16px;
+  --display-font: neue-haas-grotesk-display, sans-serif;
+  --text-font: neue-haas-grotesk-text, sans-serif;
+  --gutter-size: 30px;
+  --font-size: 16px;
+  --white: #fff;
+  --white-text: #ACA7B8;
+  --black: #0A0516;
+  --black-text: #ACA7B8;
+  --background: #06050D;
+  --color-red1: #E41C45;  
+  --color-purple-light1: #9387B1;
+}
+
+body {
+  font-size: 16px;
+  background: var(--background);
+  color: var(--white-text);
+  font-size: var(--font-size);
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  /* border-right: 1px dotted rgba(255,255,255,0.2);
+  border-left: 1px dotted rgba(255,255,255,0.2); */
+}
+
+.title, h2 {
+  font-size: 3rem;
+  color: var(--white);
+  font-weight: 700;
+  font-family: var(--display-font);
+  margin: 0;
+}
+
+#header #logo {
+  text-align: center;
+  padding-top: 20px;
+}
+
+#header #slogan {
+  position: relative;
+  min-height: 1206px;
+}
+
+#header #slogan .image-king {
+  position: absolute;
+  z-index: 10;
+  height: 1px;
+  width: 1px;
+  top: 50%;
+  bottom: 50%;
+  left: 50%;
+  right: 50%;
+}
+
+#header #slogan .image-king::after {
+  position: absolute;
+  z-index: 10;
+  content: '';
+  display: block;
+  background: url('assets/king.png') no-repeat center center;
+  margin-left: calc(-1045px / 2);
+  margin-top: calc(-1206px / 2);
+  left: -200px;
+  width: 1045px;
+  height: 1206px;
+}
+
+#header #slogan .image-king::before {
+  position: absolute;
+  z-index: 9;
+  content: '';
+  display: block;
+  background: url('assets/bg-king.png') no-repeat center center;
+  margin-left: calc(-1045px / 2);
+  margin-top: calc(-1206px / 2);
+  top: 260px;
+  left: -450px;
+  width: 1173px;
+  height: 1173px;
+}
+
+#header #slogan .content {
+  position: relative;
+  z-index: 100;
+  max-width: 600px;
+  padding-top: 170px;
+  margin: 0 0 0 auto;
+}
+
+#header #slogan .header-title h1 {
+  font-family: var(--display-font);
+  text-transform: uppercase;
+  font-size: 5.063rem;
+  line-height: 1;
+}
+
+#header #slogan .header-title h1 span {
+  font-style: italic;
+  color: var(--color-red1);
+}
+
+#header #slogan .header-text {
+  color: var(--color-purple-light1);
+  font-size: 1.75rem;
+}
+
+#regras {
+  color: var(--white-text);
+  max-width: 100vw;
+  overflow: hidden;
+  margin-top: -500px;
+  position: relative;
+  z-index: 800;
+}
+
+#regras .bg {
+  background: var(--white);
+  padding: 100px 0;
+}
+
+#regras .shape {
+  width: 0;
+  height: 0;
+  border: 100vw solid var(--white);
+  border-bottom-width: 190px;
+  border-right-width: 0px;
+  border-top-width: 0px;
+  border-color: transparent transparent var(--white) transparent;
+}
+
+#regras .container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#regras .content {
+  max-width: 600px;
+}
+
+#regras .content .title h2 {
+  color: var(--black);
+}
+
+#personagens {
+  padding: 160px 0;
+  text-align: center;
+  overflow: hidden;
+}
+
+#personagens .content {
+  padding-bottom: 80px;
+}
+
+#personagens .personagens-img-list {
+  display: flex;
+  padding-left: 600px;
+}
+
+#personagens .personagens-img-list .personagem {
+  margin-bottom: 80px;
+  margin-left: 15px;
+  margin-right: 15px;
+  opacity: 0.3;
+  transition: opacity 1.2s ease-in-out 0.2s;
+}
+
+#personagens .personagens-img-list .personagem .image {
+  cursor: pointer;
+}
+
+#personagens .personagens-img-list .personagem.active {
+  opacity: 1;
+}
+
+#personagens .personagens-img-list {
+  transition: margin-left 1.2s ease-in-out 0.2s;
+}
+
+#personagens .personagens-list {
+  /* display: flex; */
+  /* position: relative;
+  min-height: 520px; */
+}
+
+#personagens .personagens-list .personagem {
+  width: 0;
+  height: 0;
+  opacity: 0;
+  /* transition: opacity 1.2s ease-in-out 0.2s, width 0s ease-in-out 1.4s, height 0s ease-in-out 1.4s; */
+}
+
+#personagens .personagens-list .personagem.active {
+  width: auto;
+  height: auto;
+  opacity: 1;
+  transition: opacity 1.2s ease-in-out 0.6s;
+}
+
+#personagens .personagens-list .personagem .about {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+#personagens .personagens-list .personagem .about-title {
+  font-family: var(--text-font);
+  font-weight: 700;
+  color: var(--white);
+  font-size: 2.25rem;
+}
+
+#comprar {
+  
+}
+
+#comprar .bg {
+  position: relative;
+  z-index: 20;
+  min-height: 1000px;
+}
+
+#comprar .bg::after {
+  content: '';
+  display: block;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 10;
+  width: 100%;
+  height: 100%;
+  background: url('assets/bg-comprar.jpg') no-repeat center center;
+  background-size: cover;
+  opacity: 0.16;
+}
+
+#comprar .bg .container {
+  position: relative;
+  z-index: 20;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 362px;
+}
+
+#comprar .bg .container .image {
+  flex: 600px;
+  display: flex;
+  justify-content: center;
+}
+
+#comprar .bg .container .content {
+  flex: 600px;
+  padding-right: 100px;
+}
+
+#comprar .content .text {
+  font-size: 16px;
+  color: #ACA7B8;
+}
+
+#comprar .content .subtitle {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  font-size: 24px;
+  color: var(--white);
+  font-weight: 700;
+}
+
+#comprar .content .logos {
+  display: flex;
+  align-items: center;
+  padding-bottom: 40px;
+}
+
+#comprar .content .logos img {
+  padding-right: 20px;
+}
+
+#comprar .content .btn a {
+  display: flex;
+  width: 299px;
+  height: 63px;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  border-radius: 32px;
+  background: #FF2626;
+  color: var(--white);
+  font-weight: 700;
+  font-size: 24px;
+  text-decoration: none;
+  font-style: none;
+}
+
+#comprar .content .btn a:hover {
+  background: #d01b1b;
+}
+
+#criadores .bg .container {
+  padding-top: 160px;
+  padding-bottom: 160px;
+  position: relative;
+}
+
+#criadores .bg .container::after, #criadores .bg .container::before {
+  content: '';
+  display: block;
+  position: absolute;
+  bottom: 0;
+  background: url('assets/bg-lamp.png') top center no-repeat, url('assets/lamp.png') bottom center no-repeat;
+  width: 686px;
+  height: 750px;
+}
+
+#criadores .bg .container::after {
+  left: -300px;
+}
+
+#criadores .bg .container::before {
+  right: -300px;
+}
+
+#criadores .content {
+  text-align: center;
+}
+
+#criadores .title span.flag {
+  position: relative;
+}
+
+#criadores .title span.flag::after {
+  content: '';
+  display: block;
+  position: absolute;
+  top: 46px;
+  left: -36px;
+  background: url('assets/flag.png') center center no-repeat;
+  width: 106px;
+  height: 276px;
+}
+
+#criadores .content .text {
+  margin-bottom: 70px;
+}
+
+#criadores .content .pictures {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+#criadores .content .pictures .image {
+  flex: 0 0 320px;
+  width: 320px;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 30px;
+}
+
+#footer {
+  background: #DB2C2C;
+  color: #fff;
+  text-align: center;
+  padding: 10px 0;
+}
+
+#footer .bg::after, #footer .bg::before {
+  content: '';
+  display: block;
+  width: 100%;
+  height: 3px;
+  background: #F9E2C0;
+}
+
+#footer .container {
+  padding: 10px 0 20px;
+}
+
+#footer .container p {
+  margin: 0;
+}
+
