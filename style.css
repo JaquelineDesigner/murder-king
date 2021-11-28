@@ -397,3 +397,18 @@ body {
   margin: 0;
 }
 
+#regras .content .desc a {
+  display: flex;
+  width: 299px;
+  height: 56px;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  border-radius: 32px;
+  background: #FF2626;
+  color: var(--white);
+  font-weight: 700;
+  font-size: 16px;
+  text-decoration: none;
+  font-style: none;
+}
